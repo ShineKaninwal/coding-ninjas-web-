@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register - Coding Ninja's Fest 2025</title>
+  <link href="style.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;800&family=Roboto+Mono:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Canvas Background -->
+  <canvas id="background-canvas"></canvas>
+
+  <!-- Navbar -->
+  <nav>
+    <div class="logo"><a href="index.html">Coding Ninja's Fest</a></div>
+    <div class="menu">
+      <a href="index.html">Home</a>
+      <a href="register.html">Register</a>
+    </div>
+  </nav>
+
+  <!-- Registration Form -->
+  <div class="form-container">
+    <h1>Register for Coding Ninja's Fest 2025</h1>
+    <form id="registrationForm">
+      <label for="name">Full Name</label>
+      <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+      <label for="team">Team Name (if any)</label>
+      <input type="text" id="team" name="team" placeholder="Enter team name">
+
+      <label for="category">Participation Type</label>
+      <select id="category" name="category" required>
+        <option value="">Select...</option>
+        <option value="solo">Solo</option>
+        <option value="team">Team</option>
+      </select>
+
+      <label for="skills">Primary Skills / Languages</label>
+      <textarea id="skills" name="skills" rows="3" placeholder="e.g. Python, C++, Web Development"></textarea>
+
+      <div class="cta">
+        <button type="submit">Submit Registration</button>
+      </div>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
